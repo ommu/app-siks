@@ -34,6 +34,8 @@
 	],
 	"require": {
 		"php": "~7.0",
-		"yiisoft/yii2": "~2.0.13"
+		"yiisoft/yii2": "~2.0.13",
+		"ommu/archive": "v2.x-dev",
+		"ommu/stackadmin": "@dev"
 	}
 }
