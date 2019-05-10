@@ -1,0 +1,39 @@
+{
+	"name": "sudaryanto/siks",
+	"description": "Aplikasi Sistem Informasi Kearsipan Statis",
+	"keywords": [
+		"apps",
+		"siks",
+		"sikn",
+		"jikn",
+		"anri",
+		"arsip",
+		"ommu",
+		"ommu-platform",
+		"yii2"
+	],
+	"homepage": "https://bitbucket.org/ommu/siks",
+	"type": "ommu-apps",
+	"license": "Apache-2.0",
+	"support": {
+		"issues": "https://bitbucket.org/ommu/siks/issues",
+		"wiki": "https://bitbucket.org/ommu/siks/wiki",
+		"source": "https://bitbucket.org/ommu/siks"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://bitbucket.org/ommu/siks.git"
+	},
+	"authors": [
+		{
+			"name": "Putra Sudaryanto",
+			"email": "putra@sudaryanto.id",
+			"homepage": "https://sudaryanto.id",
+			"role": "Creator"
+		}
+	],
+	"require": {
+		"php": "~7.0",
+		"yiisoft/yii2": "~2.0.13"
+	}
+}
