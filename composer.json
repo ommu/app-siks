@@ -1,6 +1,7 @@
 {
 	"name": "sudaryanto/siks",
 	"description": "Aplikasi Sistem Informasi Kearsipan Statis",
+	"type": "ommu-apps",
 	"keywords": [
 		"apps",
 		"siks",
@@ -12,9 +13,8 @@
 		"ommu-platform",
 		"yii2"
 	],
-	"homepage": "https://bitbucket.org/ommu/siks",
-	"type": "ommu-apps",
 	"license": "Apache-2.0",
+	"homepage": "https://bitbucket.org/ommu/siks",
 	"support": {
 		"issues": "https://bitbucket.org/ommu/siks/issues",
 		"wiki": "https://bitbucket.org/ommu/siks/wiki",
