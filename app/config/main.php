@@ -10,8 +10,8 @@ $params = \yii\helpers\ArrayHelper::merge(
 $bn = \app\components\Application::getAppId();
 
 $config = [
+	'id' => 'siks',
 	'name' => 'Sistem Informasi Kearsipan Statis',
-	'id' => 'basic',
 	'runtimePath' => dirname(__DIR__) . '/runtime',
 	'controllerNamespace' => 'siks\app\controllers',
 	'bootstrap' => [],
@@ -60,6 +60,9 @@ $config = [
 		],
 		'user' => [
 			'class' => 'app\modules\user\Module',
+		],
+		'report' => [
+			'class' => 'ommu\report\Module',
 		],
 	],
 ];
