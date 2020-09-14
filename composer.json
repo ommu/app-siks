@@ -1,5 +1,5 @@
 {
-	"name": "sudaryanto/siks",
+	"name": "ommuid/siks",
 	"description": "Sistem Informasi Kearsipan Statis from Ommu Platform",
 	"type": "ommu-apps",
 	"keywords": [
@@ -14,15 +14,15 @@
 		"yii2"
 	],
 	"license": "Apache-2.0",
-	"homepage": "https://bitbucket.org/ommu/siks",
+	"homepage": "https://bitbucket.org/ommu/app-siks",
 	"support": {
-		"issues": "https://bitbucket.org/ommu/siks/issues",
-		"wiki": "https://bitbucket.org/ommu/siks/wiki",
-		"source": "https://bitbucket.org/ommu/siks"
+		"issues": "https://bitbucket.org/ommu/app-siks/issues",
+		"wiki": "https://bitbucket.org/ommu/app-siks/wiki",
+		"source": "https://bitbucket.org/ommu/app-siks"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org/ommu/siks.git"
+		"url": "https://bitbucket.org/ommu/app-siks.git"
 	},
 	"authors": [
 		{
