@@ -1,6 +1,6 @@
 {
 	"name": "ommuid/siks",
-	"description": "Sistem Informasi Kearsipan Statis from Ommu Platform",
+	"description": "Sistem Informasi Kearsipan Statis (SIKS) Web Apps From OMMU",
 	"type": "ommu-apps",
 	"keywords": [
 		"apps",
