@@ -4,11 +4,14 @@
 	"type": "ommu-apps",
 	"keywords": [
 		"apps",
+		"web-apps",
+		"arsip-web-apps",
 		"siks",
 		"sikn",
 		"jikn",
 		"anri",
 		"arsip",
+		"arsip-statis",
 		"ommu",
 		"ommu-platform",
 		"yii2"
@@ -37,5 +40,30 @@
 		"yiisoft/yii2": "~2.0.13",
 		"ommu/archive": "dev-master",
 		"ommu/stackadmin": "@dev"
+	},
+	"scripts": {
+		"post-create-project-cmd": [
+			"yii\\composer\\Installer::postInstall"
+		],
+		"post-install-cmd": [
+			"yii\\composer\\Installer::postInstall"
+		]
+	},
+	"extra": {
+		"yii\\composer\\Installer::postInstall": {
+            "copyFiles": [
+                {
+					"apps.json": "siks/apps.json"
+                }
+            ],
+			"setPermission": [
+				{
+					"siks/assets": "0777",
+					"siks/cache": "0777",
+					"siks/app/runtime": "0777",
+					"siks/apps.json": "0777"
+				}
+			]
+		}
 	}
 }
