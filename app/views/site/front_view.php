@@ -91,7 +91,7 @@ $this->params['breadcrumbs'][] = $model->title->message; ?>
 		[
 			'attribute' => 'views',
 			'value' => function ($model) {
-				$views = $model->grid->view;
+				$views = $model->view->views;
 				return Html::a($views, ['page/view/manage', 'page'=>$model->primaryKey, 'publish'=>1], ['title'=>Yii::t('app', '{count} views', ['count'=>$views])]);
 			},
 			'format' => 'html',
