@@ -29,7 +29,9 @@ $config = \yii\helpers\ArrayHelper::merge(
 if(\app\components\Application::isDev()) {
 	$config = \yii\helpers\ArrayHelper::merge(
 		require(__DIR__ . '/../protected/config/main.php'),
-		require(__DIR__ . '/app/config/main.php'),
+		(is_readable(__DIR__ . '/app/config/main-dev.php'))? 
+			require(__DIR__ . '/app/config/main-dev.php'): 
+			require(__DIR__ . '/app/config/main.php'),
 		(is_readable(__DIR__ . '/../protected/config/dynamic-dev.php'))? 
 			require(__DIR__ . '/../protected/config/dynamic-dev.php'): 
 			require(__DIR__ . '/../protected/config/dynamic.php'),

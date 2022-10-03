@@ -29,18 +29,18 @@ $config = [
 		],
 		'jwt' => [
 			'class'    => 'app\components\Jwt',
-			'key'      => 'Z3jzZOd80qMhyVZnZQLeQnB8M1DMQB5G',
+			'key'      => '',
 			'issuer'   => 'http://dpad.jogjaprov.go.id/siks',
 			'audiance' => 'http://dpad.jogjaprov.go.id/siks',
-			'id'       => '7f1904f4-c6cb-40d3-9b03-9195a82baa78',
+			'id'       => '',
 		],
-		'authManager' => [
-			'class'             => 'mdm\admin\components\DbManager',
-			'assignmentTable'   => 'ommu_core_auth_assignment',
-			'itemTable'         => 'siks_auth_item',
-			'itemChildTable'    => 'siks_auth_item_child',
-			'ruleTable'         => 'siks_auth_rule',
-		],
+		// 'authManager' => [
+		// 	'class'             => 'mdm\admin\components\DbManager',
+		// 	'assignmentTable'   => 'ommu_core_auth_assignment',
+		// 	'itemTable'         => '',
+		// 	'itemChildTable'    => '',
+		// 	'ruleTable'         => '',
+		// ],
 	],
 	'params' => $params,
 	'modules' => [
