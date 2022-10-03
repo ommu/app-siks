@@ -1,0 +1,14 @@
+.detail-view hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#tree {
+	min-height: 100px;
+}
+#tree.aciTreeLoad {
+	background: #f9f9f9 url(../image/load-root.gif) center center no-repeat;
+}
+#tree .aciTreeText p:first-child,
+#tree .aciTreeText p + p {
+	margin-bottom: 0;
+}
