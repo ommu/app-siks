@@ -24,6 +24,40 @@ class SiteController extends \app\controllers\SiteController
 	/**
 	 * {@inheritdoc}
 	 */
+	public function actions()
+	{
+		$actions = parent::actions();
+
+		if (class_exists('siks\app\actions\ContactAction')) {
+			$actions = ArrayHelper::merge($actions, [
+				'contact' => [
+					'class' => 'siks\app\actions\ContactAction',
+					'view' => 'front_contact',
+				],
+			]);
+		}
+
+		if(Yii::$app->isMaintenance()) {
+			$maintenance_theme = Yii::$app->setting->get(join('_', [$appName, 'maintenance_theme']), 'arnica');
+			$ContactActionClass = strtr('themes\{theme}\actions\ContactAction', [
+				'{theme}' => $maintenance_theme,
+			]);
+			if (class_exists($ContactActionClass)) {
+				$actions = ArrayHelper::merge($actions, [
+					'contact' => [
+						'class' => $ContactActionClass,
+						'view' => 'front_contact',
+					],
+				]);
+			}
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * {@inheritdoc}
+	 */
 	public function getViewPath()
 	{
 		return Yii::getAlias('@siks/app/views') . DIRECTORY_SEPARATOR . $this->id;

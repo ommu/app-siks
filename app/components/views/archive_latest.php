@@ -6,20 +6,20 @@ use yii\helpers\Inflector;
 
 <div class="card">
 	<div class="card-header card-header-large bg-white d-flex align-items-center">
-		<h4 class="card-header__title flex m-0"><?php echo Yii::t('app', 'Populars'); ?></h4>
+		<h4 class="card-header__title flex m-0"><?php echo Yii::t('app', 'Latests'); ?></h4>
 	</div>
     <div class="card-header card-header-tabs-basic nav" role="tablist">
         <?php $i = 0;
         foreach ($orderBy as $key => $val) {
             $i++; ?>
-        <a href="#archive-popular-<?php echo $val;?>" <?php echo $i == 1 ? 'class="active"' : '';?> title="<?php echo ucwords($val);?>" data-toggle="tab" role="tab"><?php echo ucwords($val);?></a>
+        <a href="#archive-latest-<?php echo $val;?>" <?php echo $i == 1 ? 'class="active"' : '';?> title="<?php echo ucwords($val);?>" data-toggle="tab" role="tab"><?php echo ucwords($val);?></a>
         <?php }?>
     </div>
     <div class="list-group tab-content">
         <?php $i = 0;
         foreach ($orderBy as $key => $val) {
             $i++; ?>
-        <div class="tab-pane fade <?php echo $i == 1 ? 'active show' : '';?>" id="archive-popular-<?php echo $val;?>">
+        <div class="tab-pane fade <?php echo $i == 1 ? 'active show' : '';?>" id="archive-latest-<?php echo $val;?>">
             <?php $model = $archiveContent[$val];
             if(!empty($model)) {
                 foreach ($model as $key => $row) {
@@ -41,8 +41,8 @@ use yii\helpers\Inflector;
                         </small>
                         <?php }?>
                         <small class="d-flex align-items-top">
-                            <i class="material-icons icon-16pt icon-muted mr-1">visibility</i>
-                            <?php echo Yii::t('app', '{views} views', ['views' => $row['views']]);?>
+                            <i class="material-icons icon-16pt icon-muted mr-1">date_range</i>
+                            <?php echo Yii::t('app', 'Created {creationDate}', ['creationDate' => Yii::$app->formatter->asDate($row['creationDate'], 'long')]);?>
                         </small>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ use yii\helpers\Inflector;
             <?php }?>
 
 			<div class="card-footer text-center border-top">
-				<?php echo Html::a(Yii::t('app', 'Readmore').' <i class="material-icons icon-muted ml-1">arrow_forward</i>', ['/archive/popular/index'], ['class'=>'text-muted', 'title'=>Yii::t('app', 'Readmore')]);?>
+				<?php echo Html::a(Yii::t('app', 'Readmore').' <i class="material-icons icon-muted ml-1">arrow_forward</i>', ['/archive/latest/index'], ['class'=>'text-muted', 'title'=>Yii::t('app', 'Readmore')]);?>
 			</div>
         </div>
         <?php }?>

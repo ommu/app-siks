@@ -9,4 +9,12 @@ return [
 	'mdm.admin.configs' => [
 		'menuTable' => 'siks_menus',
 	],
+
+	'stackadmin' => [
+        'bgLogin' => '@webpublic/siks/bg/samuel-zeller-JuFcQxgCXwA-unsplash.jpg',
+        'search' => [
+            'action' => '/archive/site/index',
+            'attribute' => 'title',
+        ],
+	],
 ];
