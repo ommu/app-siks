@@ -45,7 +45,7 @@ if(\app\components\Application::isDev()) {
 	if(!file_exists($assets))
 		@mkdir($assets, 0777, true);
 	else
-		@chmod($assets, 0777, true);
+		@chmod($assets, 0777);
 	
 	// generate cache directory
 	$cache = dirname(__FILE__).'/cache';
