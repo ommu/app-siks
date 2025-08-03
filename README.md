@@ -1,6 +1,6 @@
 app-siks
 =============
-Sistem Informasi Kearsipan Statis (SIKS) Web Apps For OMMU
+Sistem Informasi Kearsipan Statis (SIKS) Web Apps For OMMU2
 
 
 Installation
