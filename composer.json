@@ -36,8 +36,8 @@
 	],
 	"require": {
 		"php": "~7.0",
-		"ommu/archive": "dev-master",
-		"ommu/stackadmin": "@dev"
+		"ommu/archive": "v2.x-dev",
+		"ommu/stackadmin": "dev-master"
 	},
 	"scripts": {
 		"post-create-project-cmd": [

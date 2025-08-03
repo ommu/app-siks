@@ -4,9 +4,9 @@
  * @var $this siks\app\controllers\archive\SiteController
  * @var $model ommu\archive\models\Archives
  *
- * @author Putra Sudaryanto <putra@ommu.co>
- * @contact (+62)856-299-4114
- * @copyright Copyright (c) 2019 OMMU (www.ommu.co)
+ * @author Putra Sudaryanto <putra@ommu.id>
+ * @contact (+62)811-2540-432
+ * @copyright Copyright (c) 2019 OMMU (www.ommu.id)
  * @created date 16 September 2019, 21:46 WIB
  * @link https://bitbucket.org/ommu/siks
  *
