@@ -1,5 +1,5 @@
 {
-	"name": "ommuid/siks",
+	"name": "ommu/siks",
 	"description": "Sistem Informasi Kearsipan Statis (SIKS) Web Apps From OMMU",
 	"type": "ommu-apps",
 	"keywords": [
@@ -12,26 +12,25 @@
 		"anri",
 		"arsip",
 		"arsip-statis",
-		"ommu",
-		"ommu-platform",
+		"ommu2",
 		"yii2"
 	],
 	"license": "Apache-2.0",
-	"homepage": "https://bitbucket.org/ommu/app-siks",
+	"homepage": "https://github.com/ommu/app-siks",
 	"support": {
-		"issues": "https://bitbucket.org/ommu/app-siks/issues",
-		"wiki": "https://bitbucket.org/ommu/app-siks/wiki",
-		"source": "https://bitbucket.org/ommu/app-siks"
+		"issues": "https://github.com/ommu/app-siks/issues",
+		"wiki": "https://github.com/ommu/app-siks/wiki",
+		"source": "https://github.com/ommu/app-siks"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org/ommu/app-siks.git"
+		"url": "https://github.com/ommu/app-siks.git"
 	},
 	"authors": [
 		{
 			"name": "Putra Sudaryanto",
-			"email": "putra@ommu.co",
-			"homepage": "https://ommu.co",
+			"email": "putra@ommu.id",
+			"homepage": "https://ommu.id",
 			"role": "Creator"
 		}
 	],
