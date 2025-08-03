@@ -13,7 +13,7 @@
  * @contact (+62)811-2540-432
  * @copyright Copyright (c) 2020 OMMU (www.ommu.id)
  * @created date 4 March 2020, 16:36 WIB
- * @link https://bitbucket.org/ommu/bpadjogja-mediaakses
+ * @link https://github.com/ommu/app-siks
  *
  */
 

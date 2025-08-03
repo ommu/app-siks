@@ -6,7 +6,7 @@
  * @contact (+62)811-2540-432
  * @copyright Copyright (c) 2020 OMMU (www.ommu.id)
  * @created date 3 March 2020, 18:59 WIB
- * @link https://bitbucket.org/ommu/bpadjogja-portal
+ * @link https://github.com/ommu/app-siks
  * 
  */
 
