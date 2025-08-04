@@ -1,6 +1,6 @@
 {
 	"name": "ommu/siks",
-	"description": "Sistem Informasi Kearsipan Statis (SIKS) Web Apps From OMMU",
+	"description": "Sistem Informasi Kearsipan Statis (SIKS) Web Apps For OMMU",
 	"type": "ommu-apps",
 	"keywords": [
 		"apps",
@@ -36,8 +36,7 @@
 	],
 	"require": {
 		"php": "~7.0",
-		"ommu/archive": "v2.x-dev",
-		"ommu/stackadmin": "dev-master"
+		"ommu/archive": "v2.x-dev"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
